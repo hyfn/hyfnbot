@@ -1,10 +1,19 @@
-# Allows Hubot to know many languages.
+# Description:
+#   Allows Hubot to know many languages.
 #
-# translate me <phrase> - Searches for a translation for the <phrase> and then
-#                         prints that bad boy out.
+# Dependencies:
+#   None
 #
-# translate me from <source> into <target> <phrase> - Translates <phrase> from <source> into <target>. Both <source> and <target> are optional
+# Configuration:
+#   None
 #
+# Commands:
+#   translate me <phrase> - Searches for a translation for the <phrase> and then prints that bad boy out.
+#		translate me from <source> into <target> <phrase> - Translates <phrase> from <source> into <target>. Both <source> and <target> are optional
+#
+#
+# Author:
+#   victorbutler
 
 languages =
   "af": "Afrikaans",
@@ -69,7 +78,7 @@ module.exports = (robot) ->
     term   = "\"#{msg.match[3]}\""
     origin = if msg.match[1] isnt undefined then getCode(msg.match[1], languages) else 'auto'
     target = if msg.match[2] isnt undefined then getCode(msg.match[2], languages) else 'en'
-    
+
     msg.http("http://translate.google.com/translate_a/t")
       .query({
         client: 't'

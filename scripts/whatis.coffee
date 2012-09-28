@@ -12,8 +12,7 @@
 #
 # Author:
 #   Kevin Qiu
-#
-# FIXME merge with urban.coffee
+
 
 jsdom = require('jsdom').jsdom
 

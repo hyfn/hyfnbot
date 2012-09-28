@@ -1,12 +1,21 @@
-# Assign roles to people you're chatting with
+# Description:
+#   Assign roles to people you're chatting with
 #
-# <user> is a badass guitarist - assign a role to a user
-# <user> is not a badass guitarist - remove a role from a user
-# who is <user> - see what roles a user has
-
-# hubot holman is an ego surfer
-# hubot holman is not an ego surfer
+# Dependencies:
+#   None
 #
+# Configuration:
+#   None
+#
+# Commands:
+#   <user> is a badass guitarist - assign a role to a user
+#		<user> is not a badass guitarist - remove a role from a user
+#		who is <user> - see what roles a user has
+#		hubot holman is an ego surfer
+#		hubot holman is not an ego surfer
+#
+# Author:
+#   holman
 
 module.exports = (robot) ->
 

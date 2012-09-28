@@ -1,4 +1,17 @@
-# DON'T DELETE THIS SCRIPT! ALL ROBAWTS MUST KNOW THE RULES
+# Description:
+#   DON'T DELETE THIS SCRIPT! ALL ROBAWTS MUST KNOW THE RULES
+#
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
+# Commands:
+#   what are the rules? - returns the rules
+#
+# Author:
+#   sferik
 
 rules = [
   "1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.",

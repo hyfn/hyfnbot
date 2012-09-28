@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   good night
+#   good night, bye, nighty night
 #
 # Author:
 #   noahhendrix

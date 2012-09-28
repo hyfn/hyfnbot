@@ -1,7 +1,18 @@
-# Messing around with the YouTube API.
+# Description:
+#   Grab something from YouTube
 #
-# youtube me <query> - Searches YouTube for the query and returns the video
-#                      embed link.
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
+# Commands:
+#		youtube me <query> - Searches YouTube for the query and returns the video embed link.
+#
+# Author:
+#   None
+
 module.exports = (robot) ->
   robot.respond /(youtube|yt)( me)? (.*)/i, (msg) ->
     query = msg.match[3]

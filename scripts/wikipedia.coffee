@@ -4,6 +4,7 @@
 # Dependencies:
 #   "htmlparser": "1.7.6"
 #   "soupselect: "0.2.0"
+#		"underscore.string" : "2.3.0"
 #
 # Configuration:
 #   None
