@@ -8,7 +8,8 @@
 #   None
 #
 # Commands:
-#   None
+#   hubot lobotomize - puts hubot into a vegetative state
+#   hubot transplant - wakes hubot from his vegetative state
 #
 # Author:
 #   dleavitt
@@ -28,10 +29,15 @@ reflexes = [
 
 module.exports = (robot) ->
   robot.respond /lobotomize/i, (msg) ->
+    motorskills = robot.listeners;
     robot.listeners = []
+
   
     msg.send _.shuffle(reflexes)[0]
     
     robot.respond /.*/i, (msg) ->
       msg.send _.shuffle(reflexes)[0]
     
+    robot.respond /transplant/i, (msg) ->
+      robot.listeners = motorskills
+      msg.send "ಠ_ಠ"
