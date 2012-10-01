@@ -1,9 +1,18 @@
-# Generates help commands for Hubot.
+# Description:
+#   Generates help commands for Hubot. These commands are grabbed from comment blocks at the top of each file.
 #
-# These commands are grabbed from comment blocks at the top of each file.
+# Dependencies:
+#   None
 #
-# help - Displays all of the help commands that Hubot knows about.
-# help <query> - Displays all help commands that match <query>.
+# Configuration:
+#   None
+#
+# Commands:
+#   help - Displays all of the help commands that Hubot knows about.
+#   help <query> - Displays all help commands that match <query>.
+#
+# Author:
+#   None
 
 module.exports = (robot) ->
   robot.respond /help\s*(.*)?$/i, (msg) ->

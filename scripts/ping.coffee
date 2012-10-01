@@ -1,4 +1,20 @@
-# Utility commands surrounding Hubot uptime.
+# Description:
+#   Utility commands surrounding Hubot uptime.
+#
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
+# Commands:
+#   PING
+#   ECHO
+#   TIME
+#
+# Author:
+#   None
+
 module.exports = (robot) ->
   robot.respond /PING$/i, (msg) ->
     msg.send "PONG"
